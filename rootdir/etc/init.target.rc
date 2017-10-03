@@ -94,3 +94,8 @@ service imsqmidaemon /system/vendor/bin/imsqmidaemon
     socket ims_qmid stream 0660 system radio
     group radio net_raw log oem_2950
     writepid /dev/cpuset/system-background/tasks
+
+on property:sys.boot_completed=1
+    restart ril-daemon
+    restart ril-daemon2
+    restart netmgrd
