@@ -122,6 +122,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libshims_boringssl \
     libshims_camera \
     libshims_ims
 
